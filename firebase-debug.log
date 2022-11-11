@@ -1,0 +1,65 @@
+[debug] [2022-01-03T14:16:31.982Z] ----------------------------------------------------------------------
+[debug] [2022-01-03T14:16:31.986Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lukman_Oladosu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-03T14:16:31.987Z] CLI Version:   9.19.0
+[debug] [2022-01-03T14:16:31.988Z] Platform:      win32
+[debug] [2022-01-03T14:16:31.988Z] Node Version:  v16.13.1
+[debug] [2022-01-03T14:16:31.990Z] Time:          Mon Jan 03 2022 22:16:31 GMT+0800 (China Standard Time)
+[debug] [2022-01-03T14:16:31.990Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-03T14:16:32.123Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-03T14:16:32.124Z] > authorizing via signed-in user (savvyaccessorieswebapp@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lukman_Oladosu\savvy-accessories
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using savvy-accessories-web-app. 
+[debug] [2022-01-03T14:16:41.362Z] > refreshing access token with scopes: []
+[debug] [2022-01-03T14:16:41.364Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-03T14:16:41.799Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 03 Jan 2022 14:16:40 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-03T14:16:41.832Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/savvy-accessories-web-app [none]
+[debug] [2022-01-03T14:16:42.319Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/savvy-accessories-web-app 200
+[debug] [2022-01-03T14:16:42.320Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/savvy-accessories-web-app {"projectId":"savvy-accessories-web-app","projectNumber":"334969764002","displayName":"Savvy Accessories Web App","name":"projects/savvy-accessories-web-app","resources":{"hostingSite":"savvy-accessories-web-app","realtimeDatabaseInstance":"savvy-accessories-web-app-default-rtdb","storageBucket":"savvy-accessories-web-app.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\Lukman_Oladosu\savvy-accessories 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=214732565&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-01-03T14:19:35.151Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"80046ed6ea66212a0cfe","redirect_uri":"http://localhost:9005","state":"214732565"}
+[debug] [2022-01-03T14:19:37.392Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 03 Jan 2022 14:19:36 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"a813c4a56b41b89bbebf900c7e90c2e9\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"5838:7A44:13FBAE0:19B045D:61D305F7"}
+[debug] [2022-01-03T14:19:37.406Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-01-03T14:19:39.973Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-01-03T14:19:39.973Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"oladonniec","id":95596108,"node_id":"U_kgDOBbKuTA","avatar_url":"https://avatars.githubusercontent.com/u/95596108?v=4","gravatar_id":"","url":"https://api.github.com/users/oladonniec","html_url":"https://github.com/oladonniec","followers_url":"https://api.github.com/users/oladonniec/followers","following_url":"https://api.github.com/users/oladonniec/following{/other_user}","gists_url":"https://api.github.com/users/oladonniec/gists{/gist_id}","starred_url":"https://api.github.com/users/oladonniec/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/oladonniec/subscriptions","organizations_url":"https://api.github.com/users/oladonniec/orgs","repos_url":"https://api.github.com/users/oladonniec/repos","events_url":"https://api.github.com/users/oladonniec/events{/privacy}","received_events_url":"https://api.github.com/users/oladonniec/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2021-12-06T01:05:21Z","updated_at":"2022-01-03T14:19:33Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":212,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as oladonniec 
+[info] 
+[debug] [2022-01-03T14:19:55.538Z] >>> [apiv2][query] GET https://api.github.com/repos/oladonniec/actions/secrets/public-key type=owner
+[debug] [2022-01-03T14:19:56.157Z] <<< [apiv2][status] GET https://api.github.com/repos/oladonniec/actions/secrets/public-key 404
+[debug] [2022-01-03T14:19:56.158Z] <<< [apiv2][body] GET https://api.github.com/repos/oladonniec/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-01-03T14:20:18.146Z] >>> [apiv2][query] GET https://api.github.com/repos/savvy/actions/secrets/public-key type=owner
+[debug] [2022-01-03T14:20:19.715Z] <<< [apiv2][status] GET https://api.github.com/repos/savvy/actions/secrets/public-key 404
+[debug] [2022-01-03T14:20:19.715Z] <<< [apiv2][body] GET https://api.github.com/repos/savvy/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
